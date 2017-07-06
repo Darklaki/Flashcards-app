@@ -3,9 +3,6 @@ import fiszState from '../state/fishState.js'
 
 
 export function fiszRed(state=fiszState, action){
-    function newSingleFisz(old){
-        return [...old, 'KURWAAA']
-    };
     switch(action.type){
         case 'SEND_FISZKI':{
             var data = action.fiszki;
